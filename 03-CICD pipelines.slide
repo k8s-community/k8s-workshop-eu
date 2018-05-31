@@ -44,9 +44,14 @@ Lead Gopher, Golang Moscow
 - set context: `kubectl` `config` `use-context` `minikube`
 - check: `kubectl` `config` `current-context`
 - try dashboard: `minikube` `dashboard`
+
+* Install helm
+
 - install helm:
 .link https://docs.helm.sh/using_helm/#installing-the-helm-client
-- run: `helm` `init`
-- check helm: `helm` `search`
 - a useful plugin:
 .link https://github.com/technosophos/helm-template
+- run: `helm` `init`
+- check: `helm` `search`
+
+* Questions & additional tasks
