@@ -1,0 +1,73 @@
+Production-ready microservices with Go and Kubernetes
+GopherCon Iceland
+09:00 31 May 2017
+
+Elena Grahovac
+Senior Go Developer, DCMN
+elena@grahovac.me
+@webdeva
+
+Alexey Palazhchenko
+Lead Gopher, Golang Moscow
+@paaleksey
+
+* Checklist
+
+- Go
+.link https://golang.org/dl/
+- IDE or editor to write code
+- Docker
+.link https://www.docker.com/community-edition#/download
+- If Windows: Cygwin
+.link https://cygwin.com/install.html
+- GitHub Account
+.link https://github.com
+- Git client
+
+* Agenda. Part I
+
+- 09:05 Getting to know each other
+- 09:25 Intoduction. What are we going to do 
+- 09:40 Time to write and discuss some code
+- 11:05 Break (15 min)
+- 11:20 Time to write and discuss some code
+- 13:00 Lunch break (1 h)
+- 14:00 Codereview session
+- 14:30 Define CI/CD pipelines
+- 14:45 Containerization
+- 15:00 Add configuration to run services in cluster
+- 15:30 Configure GitHub integration to run CI/CD processes
+- 15:45 Trying CI/CD
+- 16:00 Break (15 min)
+
+* Agenda. Part II
+
+- 16:15 A few examples of different services
+- 16:45 Run Kubernetes and deploy services locally
+- 17:15 Catching up / additional tasks / Q&A
+- 17:45 Summarizing
+
+* Agenda. Additional event
+- 18:30 Kubernetes meetup (Reykjavik community)
+.link https://www.meetup.com/Reykjavik-Kubernetes-Meetup/events/251052060/
+
+* Getting to know each other
+
+- Who are you?
+- What is your experience with Go and Kubernetes?
+- What do you expect to get out of this workshop?
+
+* Getting to know each other
+
+- Who is going to use Windows today?
+
+* How will we work?
+
+- If you have a general question, feel free to interrupt us and ask
+- If something doesn't work or you need help, please raise your hand
+
+* Cleanup notes
+
+- The cluster will be available for a couple of weeks.
+- On June, 14th the cluster and all the data will be deleted.
+- If you want us to delete your data earlier, please let us know.

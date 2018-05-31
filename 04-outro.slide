@@ -1,0 +1,22 @@
+Production-ready microservices with Go and Kubernetes
+GopherCon Iceland
+09:00 31 May 2017
+
+Elena Grahovac
+Senior Go Developer, DCMN
+elena@grahovac.me
+@webdeva
+
+Alexey Palazhchenko
+Lead Gopher, Golang Moscow
+@paaleksey
+
+* Cleanup notes
+
+- The cluster will be available for a couple of weeks.
+- On June, 14th the cluster and all the data will be deleted.
+- If you want us to delete your data earlier, please let us know.
+
+* Kubernetes Reykjavik Meetup
+
+https://www.meetup.com/Reykjavik-Kubernetes-Meetup/events/251052060/

@@ -1,0 +1,145 @@
+Production-ready microservices with Go and Kubernetes
+Part 1
+09:00 31 May 2017
+
+Elena Grahovac
+Senior Go Developer, DCMN
+elena@grahovac.me
+@webdeva
+
+Alexey Palazhchenko
+Lead Gopher, Golang Moscow
+@paaleksey
+
+* Production readiness
+
+* Four-layer model of the microservice ecosystem
+
+.image production-readiness.png 450 _
+
+.caption by Susan J. Fowler, Production-Ready Microservices
+
+* Production readiness and Kubernetes
+
+.image production-readiness-kubernetes.png 450 _
+
+* Standartization and requirements
+
+* Standartization
+
+- stability
+- reliability
+- scalability
+- security
+- fault tolerance
+- monitoring
+- documentation
+- service-level agreements (SLA)
+- some specific requirements
+
+* Source code lifecycle
+
+.image source-code-lifecycle.png 450 _
+
+* Source code lifecycle at the workshop
+
+.image source-code-lifecycle-workshop.png 450 _
+
+* The Twelve-Factor App
+
+.link https://12factor.net
+
+- codebase revision control
+- configuration
+- service-based model
+- stateless
+- startup and shutdown 
+- logs
+- stages and pipelines: build, test, release, run
+- staging and prod similarity
+
+
+* Codebase
+
+* Codebase
+
+- branch model
+- events and triggers
+
+* Events and triggers
+
+events:
+
+- commit
+- push
+- pull request
+- merge
+
+triggers:
+
+- run tests and security checks
+- build and push image 
+- start release process
+- create tags
+
+* Step 1. Prepare a repo
+
+- create a repo on GitHub
+- go get it 
+- create a branch
+
+* Step 2. Prepare linters and pre-commit hooks (optional)
+
+- gometalinter:
+.link https://github.com/alecthomas/gometalinter
+
+- pre-commit:
+.link https://pre-commit.com
+.link https://github.com/troian/pre-commit-golang
+
+- on-save actions / file watchers:
+.link https://code.visualstudio.com/docs/languages/go
+.link https://www.jetbrains.com/help/go/settings-tools-file-watchers.html
+
+* Step 3. Write the simplest service
+
+* Step 4. Add a logger
+
+* Step 5. Add a router
+
+- download a dependency: go get -u -v github.com/gorilla/mux
+
+* Step 6. Move handlers to a separated package
+
+* Step 7. Write tests
+
+* Step 8. Configuration
+
+* Define CI/CD pipeline
+
+* Possible deployment pipeline
+
+.image cicd.png 350 _
+
+* Deployment pipeline for the workshop
+
+.image workshop-process.png 450 _
+
+* Step 9. Makefile
+
+* Step 10. Versioning
+
+* Step 11. Health schecks
+
+* Step 12. Graceful shutdown
+
+* If you use Windows it might be a little bit tricky
+
+* Step 13. Vendoring
+
+- install go dep
+.link https://github.com/golang/dep
+
+* Step 14. Dockerfile
+
+* Step 15. Prepare Kubernetes configuration

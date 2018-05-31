@@ -1,0 +1,46 @@
+Production-ready microservices with Go and Kubernetes
+Part 2
+09:00 31 May 2017
+
+Elena Grahovac
+Senior Go Developer, DCMN
+elena@grahovac.me
+@webdeva
+
+Alexey Palazhchenko
+Lead Gopher, Golang Moscow
+@paaleksey
+
+
+* Trying CI/CD
+
+- Install GitHub app to allow CI/CD listen to events:
+.link https://github.com/apps/k8s
+- Create a brunch release/a.b.c (where a.b.c is the same as RELEASE from the Makefile) 
+- Push something
+- CI and CD processes should be started
+- If everything is ok your service will be available at
+ https://services.k8s.community/<username>/<app name>
+
+* Examples
+
+.link https://github.com/kubernetes/charts
+.link https://github.com/k8s-community
+
+* Run Kubernetes locally
+
+- install kubectl:
+.link https://kubernetes.io/docs/tasks/tools/install-kubectl/
+- install minikube:
+.link https://kubernetes.io/docs/tasks/tools/install-minikube/
+- run: `minikube` `start`
+- initialize ingress: `minikube` `addons` `enable` `ingress`
+- set context: `kubectl` `config` `use-context` `minikube`
+- check: `kubectl` `config` `current-context`
+- try dashboard: `minikube` `dashboard`
+- install helm:
+.link https://docs.helm.sh/using_helm/#installing-the-helm-client
+- run: `helm` `init`
+- check helm: `helm` `search`
+- a useful plugin:
+.link https://github.com/technosophos/helm-template
