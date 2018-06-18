@@ -2,7 +2,7 @@
 
 1. Store ca.crt data as a file, e.g. at your home directory. Remember its path, e.g. `~/cdays.ca.crt`.
 
-2. Prepare the env parameters and setup the configuration:
+2. Prepare the env variables and setup the configuration:
 ```
 USER=your-github-user
 TOKEN=your-token
