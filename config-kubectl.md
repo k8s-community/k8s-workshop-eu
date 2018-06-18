@@ -25,5 +25,6 @@ kubectl config use-context cdays-${USER}
 4. Check how it works:
 
 ```
+kubectl get pods 
 kubectl get pods -n ${USER}
 ```
