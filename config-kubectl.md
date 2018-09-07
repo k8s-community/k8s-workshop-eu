@@ -13,7 +13,7 @@ CA_PATH=path-from-the-previous-step
 ```
 kubectl config set-cluster cdays-${USER} \
     --embed-certs=true \
-    --server=https://35.230.108.61 \
+    --server=https://35.204.152.42 \
     --certificate-authority=${CA_PATH}
 kubectl config set-credentials cdays-${USER} --token=${TOKEN}
 kubectl config set-context cdays-${USER} \
