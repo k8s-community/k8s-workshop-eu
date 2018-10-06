@@ -11,15 +11,15 @@ CA_PATH=path-from-the-previous-step
 
 3. Run the following commands to configure `kubectl` tool:
 ```
-kubectl config set-cluster cdays-${USER} \
+kubectl config set-cluster ws-${USER} \
     --embed-certs=true \
     --server=https://master.k8s.community \
     --certificate-authority=${CA_PATH}
-kubectl config set-credentials cdays-${USER} --token=${TOKEN}
-kubectl config set-context cdays-${USER} \
-    --cluster=cdays-${USER} \
-    --user=cdays-${USER}
-kubectl config use-context cdays-${USER}
+kubectl config set-credentials ws-${USER} --token=${TOKEN}
+kubectl config set-context ws-${USER} \
+    --cluster=ws-${USER} \
+    --user=ws-${USER}
+kubectl config use-context ws-${USER}
 ```
 
 4. Check how it works:
