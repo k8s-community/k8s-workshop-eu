@@ -1,6 +1,6 @@
 # Setup the config
 
-1. Store ca.crt data as a file, e.g. at your home directory. Remember its path, e.g. `~/cdays.ca.crt`.
+1. Store ca.crt data as a file, e.g. at your home directory. Remember its path, e.g. `~/k8scomm.ca.crt`.
 
 2. Prepare the env variables and setup the configuration:
 ```
@@ -13,7 +13,7 @@ CA_PATH=path-from-the-previous-step
 ```
 kubectl config set-cluster cdays-${USER} \
     --embed-certs=true \
-    --server=https://35.204.152.42 \
+    --server=https://master.k8s.community \
     --certificate-authority=${CA_PATH}
 kubectl config set-credentials cdays-${USER} --token=${TOKEN}
 kubectl config set-context cdays-${USER} \
