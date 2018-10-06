@@ -4,7 +4,7 @@
 
 2. Prepare the env variables and setup the configuration:
 ```
-USER=your-github-user
+USER=your-lowercased-github-user
 TOKEN=your-token
 CA_PATH=path-from-the-previous-step
 ```
