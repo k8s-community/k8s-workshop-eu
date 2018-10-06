@@ -18,7 +18,7 @@ kubectl config set-cluster ws-${USER} \
 kubectl config set-credentials ws-${USER} --token=${TOKEN}
 kubectl config set-context ws-${USER} \
     --cluster=ws-${USER} \
-    --user=ws-${USER}
+    --user=ws-${USER} \
     --namespace=${USER}
 kubectl config use-context ws-${USER}
 ```
