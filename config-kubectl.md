@@ -13,7 +13,7 @@ CA_PATH=path-from-the-previous-step
 ```
 kubectl config set-cluster ws-${USER} \
     --embed-certs=true \
-    --server=https://35.187.39.10 \
+    --server=https://35.240.115.206 \
     --certificate-authority=${CA_PATH}
 kubectl config set-credentials ws-${USER} --token=${TOKEN}
 kubectl config set-context ws-${USER} \
